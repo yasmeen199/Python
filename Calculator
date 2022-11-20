@@ -1,0 +1,163 @@
+while (1):
+    press= int (input ("\nSelect your mode : \n   1)Standard Mode 'Press 0' \n   2)Programer Mode 'press 1'\n   press = "))
+    print("\n")
+    if(press==0):
+        print("**************** Standard's mod ****************")
+        print ("existing processes")
+        print("1. '+' \n2. '-' \n3. '*' \n4. '/' \n5. '**'\n6. '//'\n7. '%'\n")
+        print("Enter the Opeation")
+        Operand1 = int (input ())
+        OP = input ()
+        Operand2 = int (input ()) 
+        Equal = input ()
+        if( OP=='+'):
+            print(Operand1+Operand2)
+        elif(OP=='-'):
+            print(Operand1-Operand2)
+        elif(OP=='*'):
+            print(Operand1*Operand2)
+        elif(OP=='/'):
+            print(Operand1/Operand2)
+        elif(OP=='**'):
+            print(Operand1**Operand2)
+        elif(OP=='//'):
+            print(Operand1//Operand2)
+        elif(OP=='%'):
+            print(Operand1%Operand2)
+            
+    elif(press==1):
+        print("**************** Programer's mod ****************")
+        print ("existing processes")
+        print("1. '+' \n2. '-' \n3. '*' \n4. '/' \n5. '%'\n6. '>>'\n7. '<<'\n8. '&'\n9. '|'\n10.'^'")
+        print("Enter the Opeation")
+        num1=int(input())
+        OP = input ()
+        num2=int(input())
+        Equal = input ()
+        if(OP=='+'):
+            print("HEX   ",hex(num1+num2),"\n""OCT   ",oct(num1+num2),"\n""BIN   ",bin(num1+num2))
+        elif(OP=='-'):
+            print("HEX   ",hex(num1-num2),"\n""OCT   ",oct(num1-num2),"\n""BIN   ",bin(num1-num2))
+        elif(OP=='*'):
+            print("HEX   ",hex(num1*num2),"\n""OCT   ",oct(num1*num2),"\n""BIN   ",bin(num1*num2)) 
+        elif(OP=='/'):
+            print("HEX   ",hex(num1/num2),"\n""OCT   ",oct(num1/num2),"\n""BIN   ",bin(num1/num2))
+        elif(OP=='%'):
+            print("HEX   ",hex(num1%num2),"\n""OCT   ",oct(num1%num2),"\n""BIN   ",bin(num1%num2))
+        elif(OP=='>>'):
+            print("HEX   ",hex(num1>>num2),"\n""OCT  ",oct(num1>>num2),"\n""BIN   ",bin(num1>>num2))    
+        elif(OP=='<<'):
+            print("HEX   ",hex(num1<<num2),"\n""OCT  ",oct(num1<<num2),"\n""BIN   ",bin(num1<<num2))
+        elif(OP=='&'):
+            print("HEX   ",hex(num1&num2),"\n""OCT   ",oct(num1&num2),"\n""BIN   ",bin(num1&num2))
+        elif(OP=='|'):
+            print("HEX   ",hex(num1|num2),"\n""OCT   ",oct(num1|num2),"\n""BIN   ",bin(num1|num2))
+        elif(OP=='^'):
+            print("HEX   ",hex(num1^num2),"\n""OCT   ",oct(num1^num2),"\n""BIN   ",bin(num1^num2))
+            
+    else:
+        print ("Wrong!Please select correct mode: ")
+        
+        
+        
+        '''
+        Operand1 = int (input ("Operand1 = "))
+        Operand2 = int (input ("Operand2 = ")) 
+       OP = input ("Op = ")
+        if( OP=='+'):
+            print("Operand1+Operand2 = ",Operand1+Operand2)
+        elif(OP=='-'):
+            print("Operand1+Operand2 = ",Operand1-Operand2)
+        elif(OP=='*'):
+            print("Operand1+Operand2 = ",Operand1*Operand2)
+        elif(OP=='/'):
+            print("Operand1+Operand2 = ",Operand1/Operand2)
+        elif(OP=='**'):
+            print("Operand1+Operand2 = ",Operand1**Operand2)
+        elif(OP=='//'):
+            print("Operand1+Operand2 = ",Operand1//Operand2)
+        elif(OP=='%'):
+            print("Operand1+Operand2 = ",Operand1%Operand2)
+        elif(OP=='&'):
+            print("Operand1&Operand2 = ",Operand1&Operand2)
+        elif(OP== '|'):
+            print("Operand1|Operand2 = ",Operand1|Operand2)
+        elif(OP=='>>'):
+            print("Operand1>>Operand2 = ",Operand1>>Operand2)
+        elif(OP=='<<'):
+            print("Operand1<<Operand2 = ",Operand1<<Operand2)
+           
+    elif(x==1):
+        print("Welcome to the scientific's mod")
+    else:
+        x = int (input ("Wrong!Please select correct mode: "))
+
+while True:
+  print("Selsect mode :\n for standered press 1\n for programmer press 2")
+  mode=input("Enter your choice: ")
+  if mode == '1':
+    print("Select operation.")
+    print("1.Add")
+    print("2.Subtract")
+    print("3.Multiply")
+    print("4.Divide")
+    print("5.Reminder")
+    
+    # take input from the user
+    choice = input("Enter your choice: ")
+    num1 = float(input("Enter first number: "))
+    num2 = float(input("Enter second number: "))
+    if choice == '1':
+      print(num1, "+", num2, "=", (num1+ num2))
+    elif choice == '2':
+      print(num1, "-", num2, "=", (num1- num2))
+
+    elif choice == '3':
+      print(num1, "*", num2, "=", (num1* num2))
+
+    elif choice == '4':
+      print(num1, "/", num2, "=",(num1/ num2))
+    elif choice == '5':
+      print(num1, "%", num2, "=",(num1% num2))
+      
+  if mode =='2':
+    print("Select operation.")
+    print("1.BIN")
+    print("2.HEX")
+    print("3.OCTAL")
+    print("4.XOR")
+    print("5.NOT")
+    print("6.OR")
+    while True:
+      # take input from the user
+      choice = input("Enter your choice: ")
+      num = int(input("Enter the number: "))
+      if choice == '1':
+        print(num," in binary =", (bin(num)[2:]))
+      elif choice == '2':
+        print(num ," in hexadicmal =", (hex(num)[2:]))
+      elif choice == '3':
+        print(num ," in octal =", (oct(num)[2:]))
+      elif choice == '4':
+        num2 = int(input("Enter second number: "))
+        print(num,"^",num2,"=",(num^num2))
+      elif choice == '5':
+        print(num,"~","=",(~num))
+      elif choice == '6':
+        num2 = int(input("Enter second number: "))
+        print(num,"|",num2,"=",(num|num2))        
+
+  # check if user wants another calculation
+  # break the while loop if answer is no
+  next_calculation = input("Let's do next calculation? (yes/no): ")
+  if next_calculation == "no":
+    break
+  else:
+
+    print("Invalid Input")
+
+'''
+        
+
+    
+
